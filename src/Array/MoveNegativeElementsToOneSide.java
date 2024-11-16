@@ -6,6 +6,7 @@ public class MoveNegativeElementsToOneSide {
 
     public static void moveNegativeElements(int[] arr){
         int j = 0;
+        // move negative number to the left side
         for(int i = 0; i < arr.length; i++){
             if(arr[i]<0){
                 int temp = arr[i];
@@ -16,7 +17,7 @@ public class MoveNegativeElementsToOneSide {
         }
     }
     public static void main(String[] args) {
-        int[] numbers = {-1,2,-3,4,5,6,-7,8,9};
+        int[] numbers = {1,2,-3,4,5,6,-7,8,9};
         moveNegativeElements(numbers);
         // print the result
         System.out.println(Arrays.toString(numbers));
