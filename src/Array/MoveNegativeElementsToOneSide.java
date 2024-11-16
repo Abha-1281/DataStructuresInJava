@@ -6,6 +6,7 @@ public class MoveNegativeElementsToOneSide {
 
     public static void moveNegativeElements(int[] arr){
         int j = 0;
+        // iterate over the elements
         // move negative number to the left side
         for(int i = 0; i < arr.length; i++){
             if(arr[i]<0){
